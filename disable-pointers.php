@@ -4,7 +4,7 @@ Plugin Name: Disable Pointers
 Plugin URI: http://lumpylemon.co.uk/plugins/wordpress-disable-admin-pointers
 Description: Disable the admin pointer tooltips introduced in WordPress 3.3
 Version: 0.1
-Author: Simon Blackbourn @ Lumpy Lemon
+Author: Simon Blackbourn
 Author URI: http://lumpylemon.co.uk
 
 
