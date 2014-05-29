@@ -5,7 +5,7 @@ Requires at least: 3.3
 Tested up to: 3.9.1
 Stable tag: trunk
 
-Disable the pointers (tooltips) introduced to admin screens in WordPress 3.3
+Disable the pointers (tooltips) shown on WordPress admin screens
 
 == Description ==
 
