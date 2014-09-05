@@ -2,7 +2,7 @@
 Contributors: lumpysimon
 Tags: admin, pointers, tooltips, disable
 Requires at least: 3.3
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: trunk
 
 Disable the pointers (tooltips) shown on WordPress admin screens
