@@ -2,17 +2,17 @@
 /*
 Plugin Name: Disable Pointers
 Plugin URI: https://github.com/lumpysimon/wp-disable-pointers
-Description: Disable the admin pointer tooltips introduced in WordPress 3.3
-Version: 0.2
+Description: Disable all admin pointer tooltips
+Version: 1.0
 Author: Simon Blackbourn
-Author URI: http://lumpylemon.co.uk
+Author URI: https://lumpylemon.co.uk
 
 
 
-	This is a plugin for WordPress (http://wordpress.org).
+	This is a plugin for WordPress (https://wordpress.org).
 
 	Released under the GPL license:
-	http://www.opensource.org/licenses/gpl-license.php
+	http://opensource.org/licenses/gpl-license.php
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -40,24 +40,15 @@ class lumpy_disable_pointers {
 
 	public function __construct() {
 
-		add_action( 'wp_default_scripts', array( $this, 'no_pointer_script' ) );
-		add_action( 'wp_default_styles',  array( $this, 'no_pointer_style'  ) );
+		add_action( 'admin_init', array( $this, 'remove_action' ) );
 
 	}
 
 
 
-	function no_pointer_script( $scripts ) {
+	function remove_action() {
 
-		$scripts->remove( 'wp-pointer' );
-
-	}
-
-
-
-	function no_pointer_style( $styles ) {
-
-		$styles->remove( 'wp-pointer' );
+		remove_action( 'admin_enqueue_scripts', array( 'WP_Internal_Pointers', 'enqueue_scripts' ) );
 
 	}
 
