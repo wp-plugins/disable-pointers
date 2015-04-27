@@ -25,7 +25,7 @@ Yes.
 
 == Changelog ==
 
-= 1.0 (27th April 2015)
+= 1.0 (27th April 2015) =
 * Use remove_action instead of directly removing script/style
 * Bump compatibility to 4.2.1
 
